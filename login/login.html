@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Electron Test</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="login.css">
+    <script src="../node_modules/pouchdb/dist/pouchdb.min.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <h1>Please Log In Before Enter</h1>
+    <div class="box">
+        <form class="form">
+            <input type="text" id="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <button type="submit" class="button" id="submit" onclick="login(); return false">Log In</button>
+            <br>
+        </form>
+    </div>
+    <div class="something">
+        <br>
+        <br>
+        <input type="text" id="check">
+    </div>
+    
+</body>
+</html>
